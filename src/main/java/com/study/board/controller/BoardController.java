@@ -28,6 +28,14 @@ public class BoardController {
         return "boardwrite";
     }
 
+    @PostMapping("/board/write")
+    public String boardWriteForm2(){
+
+        return "redirect:/board/write";
+    }
+
+
+
     @PostMapping("/board/writepro")
     public String boardWritePro(Board board, Model model, MultipartFile file) throws Exception{
 
