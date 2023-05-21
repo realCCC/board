@@ -28,6 +28,12 @@ dependencies {
 	testImplementation 'org.springframework.boot:spring-boot-starter-test'
 	implementation 'org.mariadb.jdbc:mariadb-java-client'
 
+	implementation 'org.projectlombok:lombok:1.18.26'
+	implementation 'org.springframework.boot:spring-boot-starter-actuator'
+	testImplementation('org.springframework.book:spring-boot-starter-test'){
+		exclude group:'org.junit.vintage', module:'junit-vintage-engine'
+	}
+
 }
 
 tasks.named('test') {
